@@ -16,11 +16,18 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
+        $user = $request->user();
+
+        if (! $user || $user->is_admin != 'admin') {
+            return redirect('/');
+        }
+
         if (Auth::check()) {
             if (Auth::user()->is_admin == 0) {
                 return redirect()->back()->with('warning', 'You are not Admin yet!!');
             }
         }
+
         return $next($request);
     }
 }

@@ -18,7 +18,7 @@
                 <label for="">{{$t->name}}
                     <input type="checkbox" name="tags[]" value="{{$t->id}}">
                 </label>
-                    @endforeach
+                  @endforeach
             </div>
         </div>
         <div class="form-group">

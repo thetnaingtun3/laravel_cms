@@ -10,11 +10,12 @@
             <td>Set Permission</td>
         </tr>
         @php $i = 1;@endphp
+
         @foreach($user as $c )
             <tr class="tr">
                 <td>@php  echo $i;$i++;@endphp</td>
                 <td>
-                    <img src="{{asset('profile/'.$c->profile->profile_image)}}" width="50" alt="">
+{{--                    <img src="{{asset('profile/'.$c->profile->profile_image)}}" width="50" alt="">--}}
                 </td>
                 <td>{{$c->name}}</td>
                 <td>

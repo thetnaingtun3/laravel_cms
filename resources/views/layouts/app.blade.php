@@ -18,12 +18,12 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    {{--    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">--}}
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+{{--    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">--}}
     <link rel="stylesheet" href="{{asset('css/theme.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    {{--    <link href="https://bootswatch.com/4/minty/bootstrap.min.css" rel="stylesheet">--}}
-    {{--    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css" rel="stylesheet">--}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{{--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css">--}}
     <style>
 
     </style>
@@ -131,7 +131,7 @@
                     <ul class="list-group">
                         <li class="bg-success text list-group-item "><a href="" class="text-white">Control Panel</a>
                         </li>
-                        <li class="list-group-item"><a href="">Dashboard</a></li>
+                        <li class="list-group-item"><a href="{{route('home.index')}}">Dashboard</a></li>
                         <li class="list-group-item"><a href="{{url('admin/user/'.Auth::user()->id)}}">My Profile</a>
                         </li>
                         <li class="list-group-item"><a href="{{route('post.index')}}">Posts</a></li>
