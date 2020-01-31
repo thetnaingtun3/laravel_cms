@@ -18,7 +18,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
     Route::get('user/add/new', 'UserController@create')->name('user.c');
     Route::post('user/add/new', 'UserController@store')->name('user.store');
     Route::get('user/role/edit/{role}/{user_id}', 'UserController@editRole')->name('user.edit.role')->middleware('Admin');
-
+Route::get('user/{id}','UserController@updat');
 });
 
 
