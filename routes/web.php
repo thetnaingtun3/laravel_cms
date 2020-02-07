@@ -13,6 +13,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
 
 
     Route::get('user/{id}', 'UserController@edit');
+    Route::get('user/{id}', 'UserController@add');
     Route::post('user/{id}', 'UserController@update');
     Route::get('user', 'UserController@index');
     Route::get('user/add/new', 'UserController@create')->name('user.c');
